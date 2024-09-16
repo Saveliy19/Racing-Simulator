@@ -10,5 +10,6 @@ namespace LR1.Vehicles
     {
         public abstract int MaxTravelTime { get; set; }
         public abstract int RestDuration { get; set; }
+        public abstract int TimeTraveled { get; set; }
     }
 }
