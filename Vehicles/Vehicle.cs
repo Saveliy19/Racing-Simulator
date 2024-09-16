@@ -8,8 +8,7 @@ namespace LR1
 {
     internal abstract class Vehicle : IMovable
     {
-        public string Name { get; set; }
-        public int Speed { get; set; }
+        public abstract int Speed { get; set; }
         public abstract void Move();
     }
 }
