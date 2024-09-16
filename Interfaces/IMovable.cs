@@ -9,5 +9,6 @@ namespace LR1
     internal interface IMovable
     {
         void Move();
+        double DistanceTraveled { get; }
     }
 }
