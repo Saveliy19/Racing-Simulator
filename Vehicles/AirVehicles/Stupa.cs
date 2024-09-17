@@ -10,24 +10,12 @@ namespace LR1.Vehicles.AirVehicles
     internal class Stupa: AirVehicle 
     {
         int accelerationCoefficient = 0;
-        int speed = 1; 
-        protected override int AccelerationCoefficient
-        {
-            get
-            {
-                return accelerationCoefficient;
-            }
+        int speed = 4;
+        protected override int AccelerationCoefficient => accelerationCoefficient;
 
-            set
-            {
-                accelerationCoefficient = value;
-            }
-        }
+        public override int DistanceTraveled => distanceTraveled;
 
-        public override int DistanceTraveled 
-        {
-            get { return distanceTraveled;  }
-        }
+        protected override int Speed => speed;
 
         public override void Move()
         {
@@ -38,8 +26,6 @@ namespace LR1.Vehicles.AirVehicles
             timeTraveled++;
 
         }
-
-        protected override int Speed { get; set; }
 
     }
 }

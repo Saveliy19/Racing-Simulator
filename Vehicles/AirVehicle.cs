@@ -8,6 +8,6 @@ namespace LR1.Vehicles
 {
     internal abstract class AirVehicle: Vehicle
     {
-        protected abstract int AccelerationCoefficient { get; set; }
+        protected abstract int AccelerationCoefficient { get; }
     }
 }

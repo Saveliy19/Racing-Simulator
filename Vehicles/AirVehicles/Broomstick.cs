@@ -10,10 +10,10 @@ namespace LR1.Vehicles.AirVehicles
     {
         int accelerationCoefficient = 0;
         int speed = 1;
-        public override int DistanceTraveled
-        {
-            get { return distanceTraveled; }
-        }
+        public override int DistanceTraveled => distanceTraveled;
+        protected override int Speed => speed;
+
+        protected override int AccelerationCoefficient => accelerationCoefficient;
 
         public override void Move()
         {
@@ -21,14 +21,5 @@ namespace LR1.Vehicles.AirVehicles
             timeTraveled++;
             accelerationCoefficient = distanceTraveled / 2;
         }
-
-        protected override int AccelerationCoefficient 
-        { 
-            get { return AccelerationCoefficient; }
-            set { AccelerationCoefficient = value; }
-        }
-        protected override int Speed { get; set; }
-
-
     }
 }
