@@ -8,9 +8,12 @@ namespace LR1
 {
     internal abstract class Vehicle : IMovable
     {
-        public abstract int Speed { get; set; }
 
-        public abstract double DistanceTraveled { get; }
+        protected int distanceTraveled;
+        protected int timeTraveled;
+        protected abstract int Speed { get; set; }
+
+        public abstract int DistanceTraveled { get; }
         public abstract void Move();
     }
 }
