@@ -1,0 +1,45 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LR1.Vehicles.GroundVehicles
+{
+    internal class HutChicken: GroundVehicle
+    {
+        protected int maxTravelTime = 100;
+        protected int restDuration = 10;
+        protected int speed = 10;
+
+        // время, необходимое избе, чтобы встать после начала гонки
+        private int riseTime = 0;
+
+        protected override int RestDuration { get; set; }
+        protected override int MaxTravelTime { get; set; }
+        protected override int Speed { get; set; }
+
+        public override int DistanceTraveled { get { return distanceTraveled; } }
+        public override void Move()
+        {
+            if (riseTime < 5)
+            {
+                riseTime++;
+            }
+            else
+            {
+                if (timeTraveled < maxTravelTime)
+                {
+                    distanceTraveled += speed;
+                }
+                else if (timeTraveled >= maxTravelTime + restDuration)
+                {
+                    timeTraveled = 0;
+                }
+            }
+            timeTraveled++;
+            Console.WriteLine($"Дистанция - {distanceTraveled.ToString()} Время {timeTraveled.ToString()}");
+            Console.WriteLine();
+        }
+    }
+}
