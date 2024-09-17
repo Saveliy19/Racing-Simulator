@@ -8,6 +8,8 @@ namespace LR1.Vehicles.GroundVehicles
 {
     internal class Pumpkin: GroundVehicle
     {
+        // + высокая начальная скорость
+        // - скорость уменьшается на каждом тике
         protected int maxTravelTime = 15;
         protected int restDuration = 4;
         protected int maxSpeed = 15;

@@ -8,6 +8,10 @@ namespace LR1.Vehicles.GroundVehicles
 {
     internal class HutChicken: GroundVehicle
     {
+        // + может долго бежать
+        // + средняя скорость
+        // - долгое восстановление
+        // - нужно время, чтобы встать
         protected int maxTravelTime = 100;
         protected int restDuration = 10;
         protected int speed = 10;

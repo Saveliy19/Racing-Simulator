@@ -9,9 +9,13 @@ namespace LR1.Vehicles.GroundVehicles
 {
     internal class BootsRunners: GroundVehicle
     {
+        // + высокая скорость
+        // + средняя выносливость
+        // + быстрое восстановление
+
         protected int maxTravelTime = 5;
         protected int restDuration = 1;
-        protected int speed = 4;
+        protected int speed = 30;
 
         public override int DistanceTraveled => distanceTraveled;
 
