@@ -8,8 +8,7 @@ namespace LR1.Vehicles
 {
     internal abstract class GroundVehicle: Vehicle
     {
-        public abstract int MaxTravelTime { get; set; }
-        public abstract int RestDuration { get; set; }
-        public abstract int TimeTraveled { get; set; }
+        protected abstract int MaxTravelTime { get; set; }
+        protected abstract int RestDuration { get; set; }
     }
 }

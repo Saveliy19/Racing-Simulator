@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace LR1.Vehicles
 {
-    internal abstract class AirVehicle
+    internal abstract class AirVehicle: Vehicle
     {
-        public abstract double AccelerationCoefficient { get; set; }
+        protected abstract int AccelerationCoefficient { get; set; }
     }
 }
