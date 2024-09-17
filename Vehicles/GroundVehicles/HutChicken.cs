@@ -15,11 +15,11 @@ namespace LR1.Vehicles.GroundVehicles
         // время, необходимое избе, чтобы встать после начала гонки
         private int riseTime = 0;
 
-        protected override int RestDuration { get; set; }
-        protected override int MaxTravelTime { get; set; }
-        protected override int Speed { get; set; }
+        protected override int RestDuration => restDuration;
+        protected override int MaxTravelTime => maxTravelTime;
+        protected override int Speed => speed;
 
-        public override int DistanceTraveled { get { return distanceTraveled; } }
+        public override int DistanceTraveled => distanceTraveled;
         public override void Move()
         {
             if (riseTime < 5)

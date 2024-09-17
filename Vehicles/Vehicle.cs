@@ -11,7 +11,7 @@ namespace LR1
 
         protected int distanceTraveled;
         protected int timeTraveled;
-        protected abstract int Speed { get; set; }
+        protected abstract int Speed { get; }
 
         public abstract int DistanceTraveled { get; }
         public abstract void Move();
