@@ -22,7 +22,7 @@ namespace LR1.Vehicles.AirVehicles
             distanceTraveled = speed * timeTraveled + (accelerationCoefficient * timeTraveled * timeTraveled) / 2;
             //Console.WriteLine($"Дистанция ступы - {distanceTraveled.ToString()} Время ступы {timeTraveled.ToString()}");
             //Console.WriteLine();
-            accelerationCoefficient = distanceTraveled;
+            accelerationCoefficient = (int)Math.Round(Math.Log10(distanceTraveled));
             timeTraveled++;
 
         }
