@@ -36,8 +36,8 @@ namespace LR1.Vehicles.GroundVehicles
                 timeTraveled = 0;
             }
             timeTraveled++;
-            Console.WriteLine($"Дистанция - {distanceTraveled.ToString()} Время{timeTraveled.ToString()}");
-            Console.WriteLine();
+            //Console.WriteLine($"Дистанция - {distanceTraveled.ToString()} Время{timeTraveled.ToString()}");
+            //Console.WriteLine();
 
         }
 

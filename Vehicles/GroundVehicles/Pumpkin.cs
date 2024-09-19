@@ -36,9 +36,9 @@ namespace LR1.Vehicles.GroundVehicles
                 speed = maxSpeed;
             }
             timeTraveled++;
-            Console.WriteLine($"Дистанция - {distanceTraveled.ToString()} Время{timeTraveled.ToString()}");
-            Console.WriteLine($"Скорость: {speed.ToString()}");
-            Console.WriteLine();
+            //Console.WriteLine($"Дистанция - {distanceTraveled.ToString()} Время{timeTraveled.ToString()}");
+            //Console.WriteLine($"Скорость: {speed.ToString()}");
+            //Console.WriteLine();
 
         }
     }

@@ -44,11 +44,11 @@ namespace LR1.Vehicles.AirVehicles
             {
                 accelerationCoefficient += distanceTraveled;
             }
-            Console.WriteLine($"Ускорение: {accelerationCoefficient.ToString()}");
+            //Console.WriteLine($"Ускорение: {accelerationCoefficient.ToString()}");
             
             timeTraveled++;
-            Console.WriteLine($"Дистанция - {distanceTraveled.ToString()} Время {timeTraveled.ToString()}");
-            Console.WriteLine($"Скорость: {speed.ToString()}");
+            //Console.WriteLine($"Дистанция - {distanceTraveled.ToString()} Время {timeTraveled.ToString()}");
+            //Console.WriteLine($"Скорость: {speed.ToString()}");
             
             Console.WriteLine();
         }
